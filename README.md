@@ -71,9 +71,6 @@ improve feature engineering to boost Linear Regression.
 Integrate real-time ad tracking into the dashboard.
 Implement deep learning models for even more precise predictions.
 
-### 🔗 Links
-📂 Dataset: Advertising Campaign Performance
-📊 Dashboard: Live Streamlit Dashboard (Add Link Here)
 ##  Final Thoughts
 This project shows how machine learning can optimize advertising campaigns, improve conversion rates, and provide data-driven decision-making insights. By leveraging Random Forest, we achieve highly accurate predictions, helping advertisers allocate budgets efficiently. 
 
