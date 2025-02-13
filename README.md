@@ -40,8 +40,8 @@ Heatmaps → Feature Correlations.
  #### Files:
 •	Dashboard.py → Streamlit dashboard script.
 •	dashboard_reference.json → Stores category mappings (e.g., 0 = Facebook, 1 = Google).
-#### 🔗 Live Dashboard URL (Add Link Here)
-
+#### 🔗 Live Dashboard URL:
+https://project4-team2-ad-campaign-yhuambfq6jdaiy2krjvdcv.streamlit.app/
 
 #### Features:   
 Interactive data filtering by Platform, Content Type, Target Age, Region.
