@@ -49,11 +49,11 @@ Dynamic visualizations for conversion rates, CPC impact, and platform performanc
 Downloadable predictions for further analysis.
 
 ### 📊 Key Insights from the Analysis
-	More clicks ≠ higher conversions – Quality over quantity.
-	Higher CPC (Cost Per Click) drives better conversions – Premium ads perform better.
-	Budget alone doesn’t improve conversion rates – Targeting is crucial.
-	Random Forest provides the most accurate & stable predictions.
-	A/B testing should focus on CPC & audience targeting rather than just increasing ad spending.
+More clicks ≠ higher conversions – Quality over quantity.
+Higher CPC (Cost Per Click) drives better conversions – Premium ads perform better.
+Budget alone doesn’t improve conversion rates – Targeting is crucial.
+Random Forest provides the most accurate & stable predictions.
+A/B testing should focus on CPC & audience targeting rather than just increasing ad spending.
 
 #### How to Run the Project
 1️ install Dependencies
