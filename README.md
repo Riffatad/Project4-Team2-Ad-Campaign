@@ -1,6 +1,6 @@
 # Project4-Team2-Ad-Campaign-
 ## Ad Campaign Performance Prediction
- ### Dataset: Advertising Campaign Performance Dataset
+ ### Dataset: https://www.kaggle.com/datasets/ashaychoudhary/advertising-campaign-performance-dataset
 ### Overview
 This project leverages machine learning to predict conversion rates for advertising campaigns using historical data. We compare Linear Regression and Random Forest models to determine the best-performing model. The project includes data preprocessing, model training, prediction analysis, and an interactive Streamlit dashboard for insights.
 ### 📂 Project Structure
