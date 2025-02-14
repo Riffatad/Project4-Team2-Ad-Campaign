@@ -71,8 +71,9 @@ improve feature engineering to boost Linear Regression.
 Integrate real-time ad tracking into the dashboard.
 Implement deep learning models for even more precise predictions.
 
-This project successfully demonstrates how machine learning can optimize ad campaigns by predicting conversion rates based on historical data. By comparing Random Forest and Linear Regression, we identified the most effective model for driving data-driven advertising strategies.
 
+## Conclusion:
+This project successfully demonstrates how machine learning can optimize ad campaigns by predicting conversion rates based on historical data. By comparing Random Forest and Linear Regression, we identified the most effective model for driving data-driven advertising strategies.
 ### Key Takeaways:
 #### Data-Driven Advertising: 
 Predicting conversion rates helps optimize marketing budgets and improve targeting.
