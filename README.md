@@ -145,7 +145,7 @@ Downloadable predictions for further analysis
 
 Real-time exploration of campaign data
 
-Live Dashboard: [Add Link Here]
+Live Dashboard: [https://project4-team2-ad-campaign-yhuambfq6jdaiy2krjvdcv.streamlit.app/]
 
 ### ✅ Future Work
 Further optimize Random Forest hyperparameters
