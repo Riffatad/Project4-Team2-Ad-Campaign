@@ -31,7 +31,7 @@ Build a dashboard for interactive campaign analysis
 
 Provide strategic recommendations to improve conversions
 
-###🗃️Dataset
+### 🗃️Dataset
 Name: Advertising Campaign Performance Dataset
 
 Source: Provided via Rutgers Bootcamp
@@ -167,7 +167,7 @@ Building an interactive dashboard to communicate data insights
 
 📬 Contact
 Riffat Adnan
-LinkedIn
+https://www.linkedin.com/in/riffat-adnan-7465421b6/
 📧 riffat.email@example.com
 ---
 
