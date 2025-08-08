@@ -168,8 +168,6 @@ Building an interactive dashboard to communicate data insights
 📬 Contact
 Riffat Adnan
 https://www.linkedin.com/in/riffat-adnan-7465421b6/
-📧 riffat.email@example.com
----
 
 ## 🛡️ License
 
