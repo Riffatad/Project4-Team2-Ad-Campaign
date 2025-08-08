@@ -1,128 +1,177 @@
-# 📊 Ad Campaign Performance Analysis
 
-A data analysis project focused on evaluating and optimizing digital ad campaign performance using Python, Pandas, and data visualization tools. Developed as part of a team project during the Rutgers Data Science Bootcamp.
+📊 Ad Campaign Performance Prediction
+A machine learning project focused on predicting conversion rates for advertising campaigns using historical performance data. Developed as part of the Rutgers Data Science Bootcamp, this project compares Linear Regression and Random Forest models to determine the most effective prediction method, with an interactive Streamlit dashboard for actionable insights.
 
----
+🚀 Project Overview
+This project analyzes ad campaign data to help stakeholders make data-driven decisions on ad spend, targeting, and strategy.
+It covers:
 
-## 🚀 Project Overview
+Data extraction & storage in SQLite
 
-This project aims to analyze customer responses to various advertising strategies to help stakeholders make data-driven decisions on ad spend optimization, campaign strategy, and customer targeting.
+Data cleaning, encoding, and scaling
 
-By examining ad engagement data, we identify patterns in user behavior, evaluate key performance indicators (KPIs), and provide actionable insights to improve campaign effectiveness.
+Model training & evaluation (Linear Regression vs. Random Forest)
 
----
+Visualization of results and prediction analysis
 
-## 🧠 Objectives
+Interactive dashboard for campaign insights
 
-- Clean and preprocess raw ad campaign data
-- Perform exploratory data analysis (EDA)
-- Segment audience by engagement metrics
-- Visualize campaign performance trends
-- Provide strategic recommendations based on data insights
+By comparing model performance, we found Random Forest to be the best predictor of conversion rates (R² ≈ 0.97).
 
----
+🧠 Objectives
+Extract and store ad campaign data in a database
 
-## 🗃️ Dataset
+Clean and preprocess raw data (handle missing values, encode categories, scale features)
 
-- **Source:** Provided via Rutgers Bootcamp
-- **Format:** CSV
-- **Features Include:**
-  - `Ad Topic Line`
-  - `City`, `Country`
-  - `Timestamp`
-  - `Clicked on Ad`
-  - `Age`, `Area Income`, `Daily Time Spent on Site`, `Daily Internet Usage`
+Train and evaluate prediction models
 
----
+Compare model performance using multiple metrics
 
-## 🛠️ Technologies Used
+Build a dashboard for interactive campaign analysis
 
-- **Python 3.10+**
-- **Pandas** – Data manipulation and analysis
-- **NumPy** – Numerical computing
-- **Matplotlib / Seaborn** – Data visualization
-- **Jupyter Notebook** – Exploratory analysis and documentation
-- **scikit-learn** – (Optional extension) for potential future modeling
+Provide strategic recommendations to improve conversions
 
----
+🗃️ Dataset
+Name: Advertising Campaign Performance Dataset
 
-## 📈 Exploratory Data Analysis (EDA)
+Source: Provided via Rutgers Bootcamp
 
-- Checked for missing values and cleaned data
-- Created histograms, scatter plots, and pair plots to assess variable distributions
-- Analyzed correlations between demographics and click behavior
-- Grouped data by time and region to detect performance trends
+Format: CSV → stored in SQLite database (ad_campaigns.db)
 
----
+Key Features:
 
-## 🔍 Key Insights
+Platform (e.g., Facebook, Google)
 
-- Users who spend more time on the site are less likely to click ads
-- Higher income groups tend to click fewer ads
-- Internet usage and daily site time strongly correlate with ad engagement
-- Certain cities have significantly higher click-through rates
+Content Type
 
----
+Target Age
 
-## 🧩 Team Contributions
+Region
 
-| Team Member | Role |
-|-------------|------|
-| Riffat Adnan | Data Cleaning, Visualization, Reporting |
-| [Other Teammates] | [Add Specific Roles] |
+CPC (Cost Per Click)
 
-Please update with teammates’ names and roles as needed.
+Budget
 
----
+Clicks
 
-## 📁 Repository Structure
+Conversions
 
+Conversion Rate (target variable)
+
+🛠️ Technologies Used
+Python 3.10+
+
+Pandas / NumPy – Data manipulation & numerical computing
+
+Matplotlib / Seaborn – Data visualization
+
+scikit-learn – Model training & evaluation
+
+SQLite – Data storage
+
+Streamlit – Interactive dashboard
+
+Jupyter Notebook – Development & documentation
+
+📂 Project Structure
+bash
+Copy
+Edit
 Project4-Team2-Ad-Campaign/
 │
-├── data/ # Raw and processed data files
-├── notebooks/ # Jupyter notebooks for EDA and visualization
-├── images/ # Visuals for reports or README
-├── final_report/ # Presentation and written summary
-└── README.md # Project documentation
+├── data/                  # Raw & processed datasets
+│   ├── cleaned_data.csv
+│   ├── rf_predictions.csv
+│   ├── lr_predictions.csv
+│
+├── database/
+│   ├── Database.ipynb     # Extract & store in SQLite
+│   ├── ad_campaigns.db
+│
+├── preprocessing/
+│   ├── Preprocessing.ipynb
+│   ├── scaler.pkl
+│
+├── models/
+│   ├── Training & Testing.ipynb
+│   ├── random_forest_model.pkl
+│   ├── Comparison_Model.ipynb
+│   ├── model_comparison.csv
+│
+├── analysis/
+│   ├── Analyze_predictions.ipynb
+│
+├── dashboard/
+│   ├── app.py
+│   ├── dashboard_reference.json
+│
+├── images/                # Visuals for reports & README
+│
+└── README.md              # Project documentation
+📈 Exploratory Data Analysis (EDA)
+Checked and cleaned missing values
 
+Encoded categorical variables
 
----
+Scaled numerical features
 
-## 📊 Sample Visuals
+Created bar charts for model comparisons (R² & MSE)
 
-<img src="images/ad-click-distribution.png" alt="Click Distribution" width="600"/>
-<img src="images/time-vs-clicks.png" alt="Time on Site vs Clicks" width="600"/>
+Built scatter plots for actual vs. predicted conversion rates
 
----
+Generated histograms of prediction errors
 
-## ✅ Future Work
+Visualized heatmaps for feature correlations
 
-- Apply clustering or logistic regression to predict ad clicks
-- Integrate time-series analysis for engagement trends
-- Conduct A/B testing simulations for campaign strategy
+🔍 Key Insights
+More clicks ≠ higher conversions – quality of audience matters more than quantity
 
----
+Higher CPC ads tend to convert better – premium ads outperform low-cost ones
 
-## 🧠 Learnings
+Budget alone doesn’t drive conversions – targeting is critical
 
-- Deepened knowledge of real-world data cleaning
-- Practiced effective team collaboration using Git/GitHub
-- Strengthened ability to draw insights from complex datasets
+Random Forest outperforms Linear Regression significantly (R² ≈ 0.97 vs. 0.22)
 
----
+A/B testing should focus on CPC & audience targeting rather than increasing ad spend
 
-## 📬 Contact
+📊 Model Performance
+Model	R² Score	MSE	Notes
+Random Forest	0.97	Low	Best-performing model
+Linear Regression	0.22	High	Struggled with non-linear patterns
 
-**Riffat Adnan**  
-[LinkedIn](https://www.linkedin.com/in/riffat-adnan-7465421b6)  
+💻 Streamlit Dashboard Features
+Interactive filtering by platform, content type, target age, and region
+
+Visualizations for conversion rates, CPC impact, and platform performance
+
+Downloadable predictions for further analysis
+
+Real-time exploration of campaign data
+
+Live Dashboard: [Add Link Here]
+
+✅ Future Work
+Further optimize Random Forest hyperparameters
+
+Improve feature engineering for Linear Regression
+
+Integrate real-time ad tracking into dashboard
+
+Experiment with deep learning models for improved prediction accuracy
+
+🧠 Learnings
+Practical application of database management with SQLite
+
+Hands-on experience with preprocessing pipelines in scikit-learn
+
+Model comparison and performance evaluation techniques
+
+Building an interactive dashboard to communicate data insights
+
+📬 Contact
+Riffat Adnan
+LinkedIn
 📧 riffat.email@example.com
-
----
-
-## ⭐ Acknowledgments
-
-Thanks to **Rutgers Data Science Bootcamp** for providing the dataset and guidance, and to all team members for their collaboration and dedication.
-
 ---
 
 ## 🛡️ License
